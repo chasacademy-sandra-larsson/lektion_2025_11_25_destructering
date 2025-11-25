@@ -22,9 +22,7 @@ async function fetchJokes() {
        
 }
 
-function renderJoke(joke) {
-
-    const {icon_url, value} = joke;
+function renderJoke({icon_url, value} ) {
 
     jokeContainer.innerHTML = `
        <img src="${icon_url}" alt="Chuck Norris Joke">
