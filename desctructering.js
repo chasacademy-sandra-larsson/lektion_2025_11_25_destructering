@@ -32,9 +32,13 @@ const {firstname, age, adress: {street, city}} = person;
 //const {street, city} = adress;
 console.log(firstname, age, street, city);
 
+// Användningsområde för objet destructurering är parametrar till funktion!
+function doThis({firstname, age}) {
+    console.log(firstname, age);
+}
+
+
 // Destructering av array
-
-
 const colors = ["red", "purple", "yellow"];
 
 // Istället för att göra så här:
